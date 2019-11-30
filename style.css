@@ -1,0 +1,116 @@
+*, 
+*:before, 
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #333;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 50%;
+}
+
+.btn:link, 
+.btn:visited, 
+.btn-reset:link,
+.btn-reset:visited {
+    transition: all .4s;
+    text-decoration: none;
+}
+
+.btn:active, 
+.btn-reset:active {
+    outline: none;
+    transform: translateY(3px);
+}
+
+.btn-reset {
+    border-radius: 10px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 25px;
+}
+
+.container__titre {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container__shifoumi {
+    display: flex;
+    height: 85vh;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.container__score {
+    font-size: 30px;
+    background-color: #007ad9;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 0 #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+    width: 25%;
+}
+
+#total-bot, #total-utilisateur {
+    font-size: 100px;
+}
+
+.container__jeu {
+    background-color: #f15f2b;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 0 #000;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+    width: 75%;
+}
+
+.jeu-choix {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divider {
+    height: 90%;
+    border: 2px solid rgba(0, 0, 0, .5);
+
+}
+
+.choix-titre {
+    margin-bottom: 20px;
+}
+
+.jeu-resultat {
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    text-align: center;
+}
+
+#bloc-resultat {
+    display: none;
+}
